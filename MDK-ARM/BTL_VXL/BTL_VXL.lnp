@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"btl_vxl\startup_stm32f103xb.o"
+"btl_vxl\main.o"
+"btl_vxl\stm32f1xx_it.o"
+"btl_vxl\stm32f1xx_hal_msp.o"
+"btl_vxl\stm32f1xx_hal_gpio_ex.o"
+"btl_vxl\stm32f1xx_hal_i2c.o"
+"btl_vxl\stm32f1xx_hal.o"
+"btl_vxl\stm32f1xx_hal_rcc.o"
+"btl_vxl\stm32f1xx_hal_rcc_ex.o"
+"btl_vxl\stm32f1xx_hal_gpio.o"
+"btl_vxl\stm32f1xx_hal_dma.o"
+"btl_vxl\stm32f1xx_hal_cortex.o"
+"btl_vxl\stm32f1xx_hal_pwr.o"
+"btl_vxl\stm32f1xx_hal_flash.o"
+"btl_vxl\stm32f1xx_hal_flash_ex.o"
+"btl_vxl\stm32f1xx_hal_exti.o"
+"btl_vxl\stm32f1xx_hal_tim.o"
+"btl_vxl\stm32f1xx_hal_tim_ex.o"
+"btl_vxl\system_stm32f1xx.o"
+"btl_vxl\ds3231.o"
+"btl_vxl\button.o"
+--strict --scatter "BTL_VXL\BTL_VXL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTL_VXL.map" -o BTL_VXL\BTL_VXL.axf
